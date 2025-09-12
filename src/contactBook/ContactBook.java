@@ -1,7 +1,5 @@
 package contactBook;
 
-import contactBook.Contact;
-
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -38,6 +36,19 @@ public class ContactBook {
         for(int i=index; i<counter; i++)
             contacts[i] = contacts[i+1];
         counter--;
+    }
+
+    public boolean sharesPhone() {
+        if (counter > 1) {
+            for (int i = 0; i < counter; i++) {
+                for (int j = i + 1; j < counter; j++) {
+                    if (contacts[i].getPhone() == contacts[j].getPhone()) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     //Pre: name != null && hasContact(name)
