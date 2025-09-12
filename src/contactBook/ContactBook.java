@@ -71,7 +71,9 @@ public class ContactBook {
         contacts[searchIndex(name)].setEmail(email);
     }
     public String getName(int number) {
-        return contacts[searchIndexName(number)].getName();
+        int n = searchIndexName(number);
+        if (n == -1) return null;
+        else return contacts[n].getName();
     }
 
     private int searchIndex(String name) {

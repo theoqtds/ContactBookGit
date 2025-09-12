@@ -29,7 +29,7 @@ public class Main {
     public static final String COMMAND_ERROR = "Unknown command.";
     public static final String REPEATED_NUMBERS = "There are contacts that share phone numbers.";
     public static final String DIFFERENT_NUMBERS = "All contacts have different phone numbers.";
-    public static final String PHONE_DOES_NOT_EXIST = "Phone number does not exist";
+    public static final String PHONE_DOES_NOT_EXIST = "Phone number does not exist.";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
