@@ -171,9 +171,8 @@ public class Main {
         }else {
             System.out.println(PHONE_DOES_NOT_EXIST);
         }
-
-
     }
+
 
     private static void repeatedPhones(Scanner in, ContactBook cBook) {
         if(cBook.sharesPhone()){
